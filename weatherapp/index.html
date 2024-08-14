@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="style.css" rel="stylesheet" />
+    <title>Weather App</title>
+</head>
+
+<body>
+    <main>
+        <section id="weather-wrapper">
+            <h1>What's the Weather?</h1>
+            <div id="weather-search">
+                <input id="search" type="text" placeholder="Search by city" />
+                <input id="submit" type="submit" onclick="fetchWeather()" value="Search" />
+            </div>
+            <div id="weather-data" style="display: none;"></div>
+        </section>
+    </main>
+    <!-- Implementing Background music -->
+    <audio id="background-music" loop>
+        <source src="Merry Go Round of Life - Howl's Moving Castle (Joe Hisaishi).mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
